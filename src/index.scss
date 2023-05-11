@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: url("Assets/Fonts/Avenir/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("Assets/Fonts/Avenir/AvenirLTStd-Roman.otf");
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("Assets/Fonts/Avenir/AvenirLTStd-Black.otf");
+}
+
+:root {
+  --headline-700-size: 28px;
+  --headline-500-size: 18px;
+  --body-500-size:  14px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Avenir-Book';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button.btn {
+  font-size: 16px;
+  background: #DEB841;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 30px;
+  transition: background 0.25s cubic-bezier(0.33, 1, 0.68, 1);
+
+  &:hover {
+    background: #c7a53a;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}

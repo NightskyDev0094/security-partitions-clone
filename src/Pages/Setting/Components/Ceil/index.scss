@@ -1,0 +1,7 @@
+.ceil {
+	display: grid;
+	width: fit-content;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 40px;
+	margin: auto;
+}

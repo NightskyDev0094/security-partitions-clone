@@ -1,0 +1,55 @@
+.mesh {
+	display: grid;
+	width: fit-content;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 40px;
+	margin: auto;
+
+	.card {
+		.card-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+	
+			img {
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+
+}
+
+@media (max-width: 992px) {
+	.mesh {
+		grid-template-columns: repeat(6, 1fr);
+
+		.card {
+			grid-column: span 2;
+		}
+
+		.card:nth-last-child(1) {
+			grid-column: span 3;
+		}
+		.card:nth-last-child(2) {
+			margin-left: auto;
+			grid-column: span 3;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.mesh {
+		grid-template-columns: repeat(2, 1fr);
+
+		.card {
+			grid-column: span 1;
+		}
+
+		.card:nth-last-child(1),
+		.card:nth-last-child(2) {
+			grid-column: span 1;
+		}
+	}
+}

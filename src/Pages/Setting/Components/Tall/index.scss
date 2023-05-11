@@ -1,0 +1,26 @@
+.tall {
+	display: grid;
+	width: fit-content;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	.tall {
+		grid-template-columns: repeat(4, 1fr);
+
+		.card {
+			grid-column: span 2;
+		}
+
+		.card:nth-last-child(2) {
+			grid-column: span 2;
+		}
+
+		.card:nth-last-child(1) {
+			grid-column: span 4;
+			margin: auto;
+		}
+	}
+}
